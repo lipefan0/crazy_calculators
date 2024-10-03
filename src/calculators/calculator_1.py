@@ -16,7 +16,7 @@ class Calculator1:
 
     def __validate_body(self, body: Dict) -> float:
         if "number" not in body:
-            raise Exception("Number is required")
+            raise Exception("body mal formatado")
         input_date = body["number"]
         return input_date
     
